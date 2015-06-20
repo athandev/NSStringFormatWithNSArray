@@ -11,7 +11,7 @@
 @implementation NSString (NSArrayFormat)
 
 + (NSString *)stringWithFormat:(NSString *)format arrayArguments:(NSArray *)arrayArguments {
-    static NSString *objectSpecifier = @"%@"; // static is redunant because compiler will optimize this string to have same address
+    static NSString *objectSpecifier = @"%@"; // static is redundant because compiler will optimize this string to have same address
     NSMutableString *string = [[NSMutableString alloc] init]; // here we'll create the string
     NSRange searchRange = NSMakeRange(0, [format length]);
     NSRange rangeOfPlaceholder = NSMakeRange(NSNotFound, 0); // variables are declared here because they're needed for NSAsserts
