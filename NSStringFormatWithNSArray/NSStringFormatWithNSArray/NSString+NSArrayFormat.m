@@ -43,8 +43,8 @@
     static NSString *objectSpecifier = @"%@";
     NSRange searchRange = NSMakeRange(0, [format length]);
     NSRange rangeOfPlaceholder;
-    NSUInteger index = 0;
-    for (NSUInteger index = 0; index < [arrayArguments count]; ++index) {
+    NSUInteger index;
+    for (index = 0; index < [arrayArguments count]; ++index) {
         rangeOfPlaceholder = [format rangeOfString:objectSpecifier options:0 range:searchRange];
         if (rangeOfPlaceholder.location != NSNotFound) {
             searchRange.location = rangeOfPlaceholder.location + [objectSpecifier length];

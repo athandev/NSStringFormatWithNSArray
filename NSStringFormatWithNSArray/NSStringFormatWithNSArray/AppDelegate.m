@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSStringFormatTest.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self testNSStringCategory];
     return YES;
 }
 
@@ -40,6 +42,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)testNSStringCategory { // I find my performance test more accurate than XCTest
+    NSStringFormatTest *test = [[NSStringFormatTest alloc] init];
+    
+    NSDate *beforeFunction = [[NSDate alloc] init];
+    [test testFunction];
+    NSDate *afterFunction = [[NSDate alloc] init];
+    
+    NSTimeInterval functionTime = [afterFunction timeIntervalSinceDate:beforeFunction];
+    NSLog(@"Function Time:%lf", functionTime);
 }
 
 @end

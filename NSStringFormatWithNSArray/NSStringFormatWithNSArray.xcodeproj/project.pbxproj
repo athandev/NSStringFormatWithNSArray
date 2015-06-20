@@ -15,6 +15,7 @@
 		63E6B6701B35620F0092F070 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E6B66E1B35620F0092F070 /* LaunchScreen.xib */; };
 		63E6B67C1B3562100092F070 /* NSStringFormatWithNSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6B67B1B3562100092F070 /* NSStringFormatWithNSArrayTests.m */; };
 		63E6B6871B3562DB0092F070 /* NSString+NSArrayFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */; };
+		63E6B68A1B356AFA0092F070 /* NSStringFormatTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6B6891B356AFA0092F070 /* NSStringFormatTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		63E6B67B1B3562100092F070 /* NSStringFormatWithNSArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringFormatWithNSArrayTests.m; sourceTree = "<group>"; };
 		63E6B6851B3562DB0092F070 /* NSString+NSArrayFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSArrayFormat.h"; sourceTree = "<group>"; };
 		63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSArrayFormat.m"; sourceTree = "<group>"; };
+		63E6B6881B356AFA0092F070 /* NSStringFormatTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringFormatTest.h; sourceTree = "<group>"; };
+		63E6B6891B356AFA0092F070 /* NSStringFormatTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringFormatTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				63E6B65F1B35620F0092F070 /* Supporting Files */,
 				63E6B6851B3562DB0092F070 /* NSString+NSArrayFormat.h */,
 				63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */,
+				63E6B6881B356AFA0092F070 /* NSStringFormatTest.h */,
+				63E6B6891B356AFA0092F070 /* NSStringFormatTest.m */,
 			);
 			path = NSStringFormatWithNSArray;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E6B6681B35620F0092F070 /* ViewController.m in Sources */,
+				63E6B68A1B356AFA0092F070 /* NSStringFormatTest.m in Sources */,
 				63E6B6651B35620F0092F070 /* AppDelegate.m in Sources */,
 				63E6B6621B35620F0092F070 /* main.m in Sources */,
 				63E6B6871B3562DB0092F070 /* NSString+NSArrayFormat.m in Sources */,
