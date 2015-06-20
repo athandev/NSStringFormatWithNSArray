@@ -14,6 +14,7 @@
 		63E6B66D1B35620F0092F070 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E6B66C1B35620F0092F070 /* Images.xcassets */; };
 		63E6B6701B35620F0092F070 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E6B66E1B35620F0092F070 /* LaunchScreen.xib */; };
 		63E6B67C1B3562100092F070 /* NSStringFormatWithNSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6B67B1B3562100092F070 /* NSStringFormatWithNSArrayTests.m */; };
+		63E6B6871B3562DB0092F070 /* NSString+NSArrayFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		63E6B6751B3562100092F070 /* NSStringFormatWithNSArrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSStringFormatWithNSArrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E6B67A1B3562100092F070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E6B67B1B3562100092F070 /* NSStringFormatWithNSArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringFormatWithNSArrayTests.m; sourceTree = "<group>"; };
+		63E6B6851B3562DB0092F070 /* NSString+NSArrayFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSArrayFormat.h"; sourceTree = "<group>"; };
+		63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSArrayFormat.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				63E6B66C1B35620F0092F070 /* Images.xcassets */,
 				63E6B66E1B35620F0092F070 /* LaunchScreen.xib */,
 				63E6B65F1B35620F0092F070 /* Supporting Files */,
+				63E6B6851B3562DB0092F070 /* NSString+NSArrayFormat.h */,
+				63E6B6861B3562DB0092F070 /* NSString+NSArrayFormat.m */,
 			);
 			path = NSStringFormatWithNSArray;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				63E6B6681B35620F0092F070 /* ViewController.m in Sources */,
 				63E6B6651B35620F0092F070 /* AppDelegate.m in Sources */,
 				63E6B6621B35620F0092F070 /* main.m in Sources */,
+				63E6B6871B3562DB0092F070 /* NSString+NSArrayFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
