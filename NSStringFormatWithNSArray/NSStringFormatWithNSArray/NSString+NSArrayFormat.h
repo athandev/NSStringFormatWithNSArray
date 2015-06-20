@@ -11,5 +11,6 @@
 @interface NSString (NSArrayFormat)
 
 + (NSString *)stringWithFormat:(NSString *)format arrayArguments:(NSArray *)arrayArguments;
++ (NSString *)stringWithFormat2:(NSString *)format arrayArguments:(NSArray *)arrayArguments;
 
 @end

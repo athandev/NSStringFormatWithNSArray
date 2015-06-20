@@ -39,4 +39,31 @@
     return string;
 }
 
++ (NSString *)stringWithFormat2:(NSString *)format arrayArguments:(NSArray *)arrayArguments { // same as function above but uses stringByReplacingCharactersInRange:
+    static NSString *objectSpecifier = @"%@";
+    NSRange searchRange = NSMakeRange(0, [format length]);
+    NSRange rangeOfPlaceholder;
+    NSUInteger index = 0;
+    for (NSUInteger index = 0; index < [arrayArguments count]; ++index) {
+        rangeOfPlaceholder = [format rangeOfString:objectSpecifier options:0 range:searchRange];
+        if (rangeOfPlaceholder.location != NSNotFound) {
+            searchRange.location = rangeOfPlaceholder.location + [objectSpecifier length];
+            NSRange replaceRange = NSMakeRange(rangeOfPlaceholder.location, [objectSpecifier length]);
+            NSObject *object = [arrayArguments objectAtIndex:index];
+            NSString *objectDescription = [object description];
+            format = [format stringByReplacingCharactersInRange:replaceRange withString:objectDescription];
+            searchRange.location = rangeOfPlaceholder.location + [objectDescription length];
+            searchRange.length = [format length] - searchRange.location;
+        } else {
+            break;
+        }
+    }
+    if (rangeOfPlaceholder.location != NSNotFound) {
+        rangeOfPlaceholder = [format rangeOfString:@"%@" options:0 range:searchRange];
+    }
+    NSAssert(rangeOfPlaceholder.location == NSNotFound, @"arrayArguments doesn't have enough objects to fill specified format");
+    NSAssert(index == [arrayArguments count], @"Objects starting with index %lu from arrayArguments have been ignored because there aren't enough object specifiers!", index);
+    return format;
+}
+
 @end
